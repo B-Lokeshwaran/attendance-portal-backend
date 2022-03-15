@@ -4,7 +4,7 @@ module.exports = {
   db: null,
   async connect() {
     try {
-      let con = await MongoClient.connect("mongodb+srv://lokeshwaran:lokesh78@cluster-1.wd2yz.mongodb.net?retryWrites=true&w=majority");
+      let con = await MongoClient.connect("mongodb+srv://toor:toor@cluster0.mfvku.mongodb.net?retryWrites=true&w=majority");
       this.db = con.db('attendance-portal');
       console.log("---MongoDB Connected---");
     } catch (err) {
